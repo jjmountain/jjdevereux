@@ -1,7 +1,14 @@
 /* Theme */
 
-main {
+body {
   background: #FAFAFA;
+}
+
+header {
+  color: #0277BD;
+}
+
+a {
   color: #0277BD;
 }
 
