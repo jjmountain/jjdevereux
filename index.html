@@ -7,14 +7,24 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/themes/white-blue.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto|Railway" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
   </head>
   <body>
     <div class="wrapper">
     <header>
         <div class="intro">James Devereux</div>
-        <div class="tagline">Full-stack Developer | Educator | Linguist  | 柔術家 </div>
+        <div class="profile">
+          is a
+        </div>
+        <div class="tagline"><a href="#lewagon">Developer</a> | Educator | Linguist</div>
+        <div class="profile">
+          from <span style="font-size: 30px">🇬🇧</span> based in Tokyo and looking for his first job as a full-stack developer. He did <a href="#lewagon">this bootcamp</a> where he built <a href="#projects">these awesome projects in rails</a> and is now continuing to learn by teaching himself React <i class="fab fa-react"></i> The good things are he's a fast learner, a great team player, and <span style="text-decoration: line-through">probably</span> an all round cool guy <span style="font-size: 30px">😎</span> Oh yeah, and he also speaks fluent Japanese and is an excellent communicator. Who knows, he might be a great asset to your start-up <span style="font-size: 30px">🔥🔥</span>
+        </div>
+        <div class="contact"><a href="mailto:devereuxjj@gmail.com">drop me an email</a></div>
+        <div>or catch me on</div>
+
+
         <!-- Find your icons from here - https://fontawesome.com/icons?d=gallery&s=brands -->
         <div class="icons-social">
           <a target="_blank" href="https://github.com/jjmountain"><i class="fab fa-github"></i></a>
@@ -23,19 +33,78 @@
         </div>
       </header>
     <main>
-      <div class="projects">Projects</div>
-      <div class="project">
-        <div class="project-title"><a target="_blank" href="https://www.speakitt.io">speakitt.io</a></div>
+      <div class="project" id="lewagon">
+        <div class="project-title">
+          <a target="_blank" href="https://www.lewagon.com">
+            <img src="assets/lewagon.png" height="60px" alt="">
+          </a>
+        </div>
         <div class="project-text">
           <p>
-            While there are a number of apps for teachers to give corrective feedback in writing classes, in speaking classes the options are practically non-existent. In response, we developed an app that allows students to record conversations on their smartphones, while allowing the teacher to give feedback on mistakes. After listening back to their conversations, students can reflect on and correct mistakes as if they were writing a second draft.
+            Attended Le Wagon Tokyo Batch #226 from January-March 2019.
           </p>
           <p>
-            If you are a teacher and are interested in using speakitt in your classroom then shoot me an email: <a href="mailto:devereuxjj@gmail.com">devereuxjj@gmail.com</a>
+             During this 9-week intensive coding bootcamp I gained a solid understanding of HTML, CSS, Bootstrap, JavaScript ES2015, SQL, git, GitHub, Heroku and Ruby on Rails.
           </p>
-          <p>I originally developed speakitt while taking part in <a href="https://www.lewagon.com/">Le Wagon's</a> 9-week full-stack coding bootcamp.<br>Here's a shot of me presenting it at our final demo day.</p>
+          <p>
+            Over the final 3 weeks, I lead a team of 4 classmates as lead developer to develop, implement and ship to production an app for teaching speaking skills in the English classroom <a target="_blank" href="#speakit">(Speakit Live)</a>, and a marketplace for finding barbers in Tokyo <a target="_blank" href="#aircuts">(Aircuts)</a>.
+          </p>
+          <div class="pic-wrapper">
+            <a href="assets/batch226.jpg">
+              <img class="project-pic" src="assets/batch226.jpg" height="250px" alt="batch 226 photo">
+            </a>
+            <a href="assets/lewagon2.jpg">
+              <img class="project-pic" src="assets/lewagon2.jpg" height="250px" alt="batch 226 photo">
+            </a>
+          </div>
         </div>
-          <img class="project-pic" src="assets/lewagon2.jpg" width="800px" text-align="center" alt="demo day presentation 1">
+      </div>
+        <div class="project" id="projects">
+          <div class="title">
+            Projects
+          </div>
+          <div class="project-text">
+            <div class="logo" id="speakit">
+              <p><a href="https://www.speakitt.io/" target="_blank">
+                <img class="logo" src="assets/speak_it_logo.png" height="50px">
+              </a></p>
+            </div>
+            <p>
+              I came up with the idea for a web app to help English teachers to teach speaking to students in the classroom by simultaneously recording student conversations with teacher feedback given over the keyboard.
+            </p>
+            <p>
+              The app uses <a href="https://edgeguides.rubyonrails.org/action_cable_overview.html">Action Cable</a> to create live speaking sessions which both the teacher and student can simultaneously join. The student records the session on their smartphone while the teacher records feedback on speaking mistakes. The audio file is uploaded to a <a href="https://cloudinary.com/">cloud-based storage service</a> and a record of this and the student's mistakes are saved in the database.
+            </p>
+            <div class="pic-wrapper">
+              <a href="assets/speakit1.png"><img class="project-pic" src="assets/speakit1.png" alt="aircuts homepage"></a><a href="assets/speakit2.png"><img class="project-pic" src="assets/speakit2.png" alt="aircuts booking page"></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project">
+          <div class="project-text">
+            <div class="logo" id="aircuts">
+              <p><a href="https://aircuts.herokuapp.com/" target="_blank">
+                <img src="assets/aircuts_logo1.png" height="60px">
+              </a></p>
+            </div>
+            <p>
+              We built an Airbnb-style marketplace app that allows people to book haircut appointments with barbers in Tokyo.
+            </p>
+            <p>
+              To populate our database, we used Yelp's <a href="https://www.yelp.com/fusion">API Business Endpoint</a> to get shop information for over 50 barbers in Tokyo. The app included two user models, customers and barbers, which were both implemented with the Rails gem <a href="https://github.com/plataformatec/devise">Devise</a>.
+            </p>
+            <div class="pic-wrapper">
+              <a href="assets/aircuts-homepage.png"><img class="project-pic" src="assets/aircuts-homepage.png" alt="aircuts homepage"></a><a href="assets/aircuts-book.png"><img class="project-pic" src="assets/aircuts-book.png" alt="aircuts booking page"></a>
+            </div>
+          </div>
+        </div>
+        <hr class="style-two">
+
+
+        </div>
+
+
       </div>
     </main>
     </div>
@@ -44,6 +113,34 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
   </script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <script>
+        $(document).ready(function(){
+      // Add smooth scrolling to all links
+      $("a").on('click', function(event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+
+          // Store hash
+          var hash = this.hash;
+
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function(){
+
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+    });
   </script>
 
   </body>
