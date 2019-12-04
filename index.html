@@ -6,36 +6,67 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/themes/white-blue.css">
+    <link rel="stylesheet" href="css/themes/white-green.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto|Railway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Tomorrow&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
   </head>
   <body>
     <div class="wrapper">
     <header>
         <div class="intro">James Devereux</div>
-        <div class="tagline">Developer | Educator | Linguist</div>
-        <div class="profile">
-          I'm a full-stack developer from the UK based in Tokyo. I recently did <a href="#lewagon">this bootcamp</a> where I built <a href="#projects">these awesome projects</a> in Ruby on Rails and am now continuing to learn by teaching myself React. I'm a fast learner, a great team player, and <span style="text-decoration: line-through">probably</span> an all round cool guy. oh yeah, and I also speak fluent Japanese and am an excellent communicator. Who knows, I might be a great asset to your company.
+        <div class="tagline">  Bilingual Ruby on Rails and React Developer </div>
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="english-tab" data-toggle="tab" href="#english-intro" role="tab" aria-controls="home" aria-selected="true">🇬🇧</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="japanese-tab" data-toggle="tab" href="#japanese-intro" role="tab" aria-controls="profile" aria-selected="false">🇯🇵</a>
+          </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="english-intro" role="tabpanel" aria-labelledby="home-tab">
+            <div class="profile">
+              
+             <p>Full-stack developer from the UK with one year of development experience, <span class="highlight">looking for a position starting early 2020</span> at a startup as a frontend, backend, or fullstack engineer. Open to remote but in-person is preferred in Tokyo.</p>
+             <ul>
+               <li>Check out what I've been up to over the last year at <a href="#lewagon">Le Wagon</a></li>
+               <li>See some of <a href="#projects">the projects</a> I've worked on in rails and react</li>
+               <li>Interested in hiring me? Send me <a href="mailto:devereuxjj@gmail.com">an email</a> and let's talk 🙂</li>
+             </ul>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="japanese-intro" role="tabpanel" aria-labelledby="profile-tab">
+            <div class="profile">
+              <p>
+              私は東京に拠点を置く英国のフルスタック開発者で、Le Wagonでティーチングアシスタントとして1年間の開発経験があります。 私は、フロントエンド、バックエンド、またはフルスタックエンジニアとして、東京のスタートアップで2020年初頭から仕事を探しています。
+            </p>
+            </div>  
+          </div>
         </div>
-        <div class="contact">interested in hiring me? <a href="mailto:devereuxjj@gmail.com">drop me an email</a></div>
-        <!-- Find your icons from here - https://fontawesome.com/icons?d=gallery&s=brands -->
         <div class="icons-social">
-          <a target="_blank" href="https://github.com/jjmountain"><i class="fab fa-github"></i></a>
-          <a target="_blank" href="https://www.linkedin.com/in/jjmountain"><i class="fab fa-linkedin"></i></a>
-          <a target="_blank" href="https://www.facebook.com/jjdevereux"><i class="fab fa-facebook"></i></i></a>
+            <a href="https://github.com/jjmountain" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/james-devereux-3a1abb24/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/jjdevz/" target="_blank"><i class="fab fa-instagram"></i></a>
         </div>
+
+        <!-- Find your icons from here - https://fontawesome.com/icons?d=gallery&s=brands -->
+        
       </header>
     <main>
+        <h3>Work Experience</h3>
       <div class="project" id="lewagon">
         <div class="project-title">
           <a target="_blank" href="https://www.lewagon.com">
-            <img src="assets/lewagon.png" height="60px" alt="">
+            <img src="assets/lewagon.png" height="60px" alt="Le Wagon Tokyo">
           </a>
         </div>
         <div class="project-text">
-          <p>
-            Attended Le Wagon Tokyo Batch #226 from January-March 2019.
+          <ul>
+            <li>
+                January-March 2019: attended batch #226  .
+            </li>
+          </ul>
           </p>
           <p>
              During this 9-week intensive coding bootcamp I gained a solid understanding HTML, CSS, Bootstrap, JavaScript ES2015, SQL, git, GitHub, Heroku and Ruby on Rails.

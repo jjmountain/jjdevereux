@@ -1,0 +1,30 @@
+/* Theme */
+
+body {
+  background: white;
+}
+
+header {
+  color: #003b5d;
+}
+
+a {
+  color: #12cc29;
+}
+
+
+.nav-tabs a {
+  color: #a4e3cd;
+} 
+
+.nav-tabs > .active {
+  color: #12cc29 !important;
+} 
+
+.icons-social a {
+  color: #003b5d;
+}
+
+.icons-social a svg path{
+  fill: #12cc29;
+}
